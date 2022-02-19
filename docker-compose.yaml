@@ -1,0 +1,14 @@
+web:
+  image: nginx:1.21.6
+  ports:
+    - "8080:80"
+  volumes:
+    - ./app:/app
+    - ./site.conf:/etc/nginx/conf.d/dafualt.conf
+  links:
+    - app
+
+app:
+  image: php:7-fpm
+  volumes:
+    - ./app:/app
