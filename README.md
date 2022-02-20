@@ -15,4 +15,9 @@ Opcionais:
 
 Baseado em: http://geekyplatypus.com/dockerise-your-php-application-with-nginx-and-php7-fpm/
 
+https://matthewsetter.com/setup-step-debugging-php-xdebug3-docker/
+
+https://supliu.com.br/blog/debugando-uma-aplicacao-php-no-vscode-com-xdebug-docker
+
+
 

@@ -11,6 +11,11 @@ web:
     - app
 
 app:
-  image: php:7-fpm
+#  image: php:7-fpm
+  build: .
+  expose: 
+    - 9000
   volumes:
     - ./app:/app
+    - ./xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+    - ./error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini
